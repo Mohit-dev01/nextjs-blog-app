@@ -39,12 +39,12 @@ const Header = () => {
               return (
                 <>
                   <li
+                    key={item.href}
                     className={` ${
                       pathname === item.href
                         ? "text-zinc-900 font-bold"
                         : "text-zinc-400"
                     }`}
-                    key={item.href}
                   >
                     <Link href={item.href}>{item.label}</Link>
                   </li>

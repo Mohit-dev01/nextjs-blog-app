@@ -51,7 +51,7 @@ const CreatePost = () => {
               return (
                 <>
                   <input
-                    value={field.value}
+                    value={field.value || ""}
                     onChange={field.onChange}
                     type="text"
                     name="title"
@@ -70,7 +70,7 @@ const CreatePost = () => {
               return (
                 <>
                   <textarea
-                    value={field.value}
+                    value={field.value || ""}
                     onChange={field.onChange}
                     name="body"
                     placeholder="Body content for new post"
