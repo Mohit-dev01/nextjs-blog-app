@@ -11,9 +11,9 @@ const PostLists = async () => {
   });
   return (
     <>
-      <ul>
+      <ul className="mt-5">
         {posts.map((item) => (
-          <li key={item.id} className="mb-3">
+          <li key={item.id} className="mb-3 hover:font-bold text-blue-400">
             <Link href={`/posts/${item.id}`}>{item.title}</Link>
           </li>
         ))}
